@@ -1,12 +1,15 @@
 # Number System Converter (Java CLI)
 
-Ein einfaches, schnelles und robustes Command-Line Interface (CLI) Tool in Java zur Umrechnung von Zahlen zwischen verschiedenen Zahlensystemen (Binaer, Oktal, Dezimal und Hexadezimal).
+A simple, fast, and robust Command-Line Interface (CLI) tool in Java for converting numbers between different numeral systems (Binary, Octal, Decimal, and Hexadecimal).
 
 ---
 
-## Installation & Ausfuehren
+## Installation & Usage
 
-1. Repository klonen oder Datei speichern:
+1. Clone the repository or navigate to the directory:
    ```bash
-   git clone [https://github.com/DEIN_USERNAME/Numb_System_converter.git](https://github.com/DEIN_USERNAME/Numb_System_converter.git)
+   git clone [https://github.com/YOUR_USERNAME/Numb_System_converter.git](https://github.com/YOUR_USERNAME/Numb_System_converter.git)
    cd Numb_System_converter
+
+
+   java main.java <command> <number>
