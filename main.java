@@ -14,10 +14,25 @@ public class main{
 		int dec_value = Integer.parseInt(number, 16);
 		return dec_value;
 	}
+	public static String dec_bin(String number){
+		int bin_value = Integer.parseInt(number,10);
+		return Integer.toBinaryString(bin_value);
+	}
+	public static String dec_oct(String number){
+		int oct_value = Integer.parseInt(number,10);
+		return Integer.toOctalString(oct_value);
+	}
+	public static String dec_hex(String number){
+		int hex_value = Integer.parseInt(number,10);
+		return Integer.toHexString(hex_value);
+	}
 	public static void help(){
 		System.out.println("bin-dec (convert a binary number to its decimal value)\n"+
 					"oct-dec (convert an octal number to its decimal value)\n"+
-					"hex-dec (convert a hexadecimal number to its decimal value)\n");
+					"hex-dec (convert a hexadecimal number to its decimal value)\n"+
+					"dec-bin (convert a decimal number to its binary value)\n"+
+					"dec-oct (convert a decimal number to its octal value)\n"+
+					"dec-hex (convert a decimal number to its hexadecimal value)\n");
 		return;
 	}		   
 				
@@ -59,6 +74,19 @@ public class main{
 						System.out.println("Your input: " + number);
 						System.out.println("Your decimal value: " + hex_dec(number));
 						System.exit(0);
+					case "dec-bin":
+						System.out.println("Your input: " + number);
+						System.out.println("Your binary value: " + dec_bin(number));
+						System.exit(0);
+					case "dec-oct":
+						System.out.println("Your input: " + number);
+						System.out.println("Your octal value: " + dec_oct(number));
+						System.exit(0);
+					case "dec-hex":
+						System.out.println("Your input: " + number);
+						System.out.println("Your hexadecimal value: " + dec_hex(number));
+						System.exit(0);
+
 					default:
 						System.out.println("Invalid argument: " + command);
 						System.exit(0);
